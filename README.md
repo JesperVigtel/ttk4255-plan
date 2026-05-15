@@ -1,4 +1,19 @@
-TTK4255 Study Plan
+# TTK4255 Study Plan
+
+A lightweight study checklist for TTK4255 that helps track exam preparation over time. The app is built with Vite and React, and it is deployed as a GitHub Pages site.
+
+## Features
+
+- 10-day study plan with expandable sections
+- Interactive checkboxes for tracking progress
+- Automatic saving in the browser
+- GitHub Pages deployment via GitHub Actions
+
+## Live Site
+
+The published site is available at:
+
+https://jespervigtel.github.io/ttk4255-plan/
 
 ## Local Development
 
@@ -8,20 +23,16 @@ npm install
 npm run dev
 ```
 
-Open the local Vite URL that appears in the terminal, usually http://localhost:5173.
+Open the local Vite URL shown in the terminal, usually http://localhost:5173.
 
-## GitHub Pages
+## Deployment
 
-The site is published automatically by GitHub Actions from [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml).
+The site is built and deployed automatically from [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml).
 
-The live site is:
+If the live page ever looks stale or blank, hard refresh the browser and check the latest GitHub Actions run in the repository’s Actions tab.
 
-https://jespervigtel.github.io/ttk4255-plan/
+## Progress Saving
 
-If the page is blank or tries to load `/src/main.jsx`, check repository Settings → Pages and make sure the source is set to GitHub Actions. After that, wait for the latest workflow run to finish and hard refresh the page.
+Checklist state is saved in the browser for the current site origin.
 
-## Saved Progress
-
-Checklist state is saved in the browser for that site origin.
-
-That means progress should persist when you revisit the same site on the same browser and device, unless you clear site data or switch browsers/devices.
+Progress should persist when you return on the same browser and device, unless you clear site data or switch browsers/devices.
