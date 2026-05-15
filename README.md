@@ -11,3 +11,5 @@ npm run dev
 Open http://localhost:5173 and the study plan will load. The app uses `localStorage` by default; if your environment provides `window.storage` (e.g., some extensions), it will prefer that.
 
 GitHub Pages deploys from the `dist` folder via the workflow in `.github/workflows/deploy.yml`. On GitHub Pages, your checklist progress is saved in the browser for that site origin, so it should persist across visits on the same browser and device unless you clear site data or switch browsers/devices.
+
+If the published URL still shows a 404 for `/src/main.jsx`, open repository Settings → Pages and make sure the source is set to GitHub Actions, then rerun the latest workflow.
