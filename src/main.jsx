@@ -1,22 +1,10 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
+import App from "./TTK4255_study_plan";
 import "./styles.css";
 
-// Minimal test first
-const TestApp = () => (
-  <div style={{padding: "2rem"}}>
-    <h1>Test: This is a placeholder</h1>
-    <p>If you see this, React is working.</p>
-  </div>
+createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 );
-
-const root = document.getElementById("root");
-if (!root) {
-  document.body.innerHTML = '<div style="padding: 2rem; color: red;">ERROR: root div not found</div>';
-} else {
-  try {
-    createRoot(root).render(<TestApp />);
-  } catch (e) {
-    document.body.innerHTML = `<div style="padding: 2rem; color: red;"><strong>Render Error:</strong> ${e.message}</div>`;
-  }
-}
